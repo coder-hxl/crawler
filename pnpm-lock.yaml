@@ -21,8 +21,8 @@ importers:
         specifier: ^8.0.1
         version: 8.0.1
       puppeteer:
-        specifier: 22.13.1
-        version: 22.13.1(typescript@5.5.3)
+        specifier: 24.1.1
+        version: 24.1.1(typescript@5.5.3)
       vitepress:
         specifier: v1.3.1
         version: 1.3.1(@algolia/client-search@4.24.0)(@types/node@20.14.11)(postcss@8.4.39)(search-insights@2.15.0)(terser@5.31.3)(typescript@5.5.3)
@@ -972,8 +972,8 @@ packages:
   '@polka/url@1.0.0-next.25':
     resolution: {integrity: sha512-j7P6Rgr3mmtdkeDGTe0E/aYyWEWVtc5yFXtHCRHs28/jptDEWfaVOc5T7cblqy1XKPPfCxJc/8DwQ5YgLOZOVQ==}
 
-  '@puppeteer/browsers@2.2.4':
-    resolution: {integrity: sha512-BdG2qiI1dn89OTUUsx2GZSpUzW+DRffR1wlMJyKxVHYrhnKoELSDxDd+2XImUkuWPEKk76H5FcM/gPFrEK1Tfw==}
+  '@puppeteer/browsers@2.7.0':
+    resolution: {integrity: sha512-bO61XnTuopsz9kvtfqhVbH6LTM1koxK0IlBR+yuVrM2LB7mk8+5o1w18l5zqd5cs8xlf+ntgambqRqGifMDjog==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -1344,6 +1344,10 @@ packages:
     resolution: {integrity: sha512-H0TSyFNDMomMNJQBn8wFV5YC/2eJ+VXECwOadZJT554xP6cODZHPX3H9QMQECxvrgiSOP1pHjy1sMWQVYJOUOA==}
     engines: {node: '>= 14'}
 
+  agent-base@7.1.3:
+    resolution: {integrity: sha512-jRR5wdylq8CkOe6hei19GGZnxM6rBGwFl3Bg0YItGDimvjGtAvdZk4Pu6Cl4u4Igsws4a1fd1Vq3ezrhn4KmFw==}
+    engines: {node: '>= 14'}
+
   agentkeepalive@4.5.0:
     resolution: {integrity: sha512-5GG/5IbQQpC9FpkRGsSvZI5QYeSCzlJHdpBQntCsuTOxhKD8lqKhrleg2Yi7yvMIf82Ycmmqln9U8V9qwEiJew==}
     engines: {node: '>= 8.0.0'}
@@ -1489,8 +1493,8 @@ packages:
     resolution: {integrity: sha512-OAlb+T7V4Op9OwdkjmguYRqncdlx5JiofwOAUkmTF+jNdHwzTaTs4sRAGpzLF3oOz5xAyDGrPgeIDFQmDOTiJw==}
     engines: {node: '>= 16'}
 
-  chromium-bidi@0.6.1:
-    resolution: {integrity: sha512-kSxJRj0VgtUKz6nmzc2JPfyfJGzwzt65u7PqhPHtgGQUZLF5oG+ST6l6e5ONfStUMAlhSutFCjaGKllXZa16jA==}
+  chromium-bidi@1.1.0:
+    resolution: {integrity: sha512-HislCEczCuamWm3+55Lig9XKmMF13K+BGKum9rwtDAzgUAHT4h5jNwhDmD4U20VoVUG8ujnv9UZ89qiIf5uF8w==}
     peerDependencies:
       devtools-protocol: '*'
 
@@ -1571,6 +1575,15 @@ packages:
       supports-color:
         optional: true
 
+  debug@4.4.0:
+    resolution: {integrity: sha512-6WTZ/IxCY/T6BALoZHaE4ctp9xm+Z5kY/pzYaCHRFeyVhojxlrm+46y68HA6hr0TcwEssoxNiDEUJQjfPZ/RYA==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+
   deep-eql@5.0.2:
     resolution: {integrity: sha512-h5k/5U50IJJFpzfL6nO9jaaumfjO/f2NjK/oYB2Djzm4p9L+3T9qWpZqZ2hAbLPuuYq9wrU08WQyBTL5GbPk5Q==}
     engines: {node: '>=6'}
@@ -1586,8 +1599,8 @@ packages:
     resolution: {integrity: sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==}
     engines: {node: '>=0.4.0'}
 
-  devtools-protocol@0.0.1299070:
-    resolution: {integrity: sha512-+qtL3eX50qsJ7c+qVyagqi7AWMoQCBGNfoyJZMwm/NSXVqLYbuitrWEEIzxfUmTNy7//Xe8yhMmQ+elj3uAqSg==}
+  devtools-protocol@0.0.1380148:
+    resolution: {integrity: sha512-1CJABgqLxbYxVI+uJY/UDUHJtJ0KZTSjNYJYKqd9FRoXT33WDakDHNxRapMEgzeJ/C3rcs01+avshMnPmKQbvA==}
 
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
@@ -1864,6 +1877,10 @@ packages:
 
   https-proxy-agent@7.0.5:
     resolution: {integrity: sha512-1e4Wqeblerz+tMKPIq2EMGiiWW1dIjZOksyHWSUm1rmuvw/how9hBHZ38lAGj5ID4Ik6EdkOw7NmWPy6LAwalw==}
+    engines: {node: '>= 14'}
+
+  https-proxy-agent@7.0.6:
+    resolution: {integrity: sha512-vK9P5/iUfdl95AI+JVyUuIcVtd4ofvtrOr3HNtM2yxC9bnMbEdp3x01OhQNnjb8IJYi38VlTE3mBXwcfvywuSw==}
     engines: {node: '>= 14'}
 
   human-signals@5.0.0:
@@ -2190,8 +2207,8 @@ packages:
     resolution: {integrity: sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==}
     engines: {node: '>=6'}
 
-  pac-proxy-agent@7.0.2:
-    resolution: {integrity: sha512-BFi3vZnO9X5Qt6NRz7ZOaPja3ic0PhlsmCRYLOpN11+mWBCR6XJDqW5RF3j8jm4WGGQZtBA+bTfxYzeKW73eHg==}
+  pac-proxy-agent@7.1.0:
+    resolution: {integrity: sha512-Z5FnLVVZSnX7WjBg0mhDtydeRZ1xMcATZThjySQUHqr+0ksP8kqaw23fNKkaaN/Z8gwLUs/W7xdl0I75eP2Xyw==}
     engines: {node: '>= 14'}
 
   pac-resolver@7.0.1:
@@ -2272,8 +2289,8 @@ packages:
     resolution: {integrity: sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==}
     engines: {node: '>=0.4.0'}
 
-  proxy-agent@6.4.0:
-    resolution: {integrity: sha512-u0piLU+nCOHMgGjRbimiXmA9kM/L9EHh3zL81xCdp7m+Y2pHIsnmbdDoEDoAz5geaonNR6q6+yOPQs6n4T6sBQ==}
+  proxy-agent@6.5.0:
+    resolution: {integrity: sha512-TmatMXdr2KlRiA2CyDu8GqR8EjahTG3aY3nXjdzFyoZbmB8hrBsTyMezhULIXKnC0jpfjlmiZ3+EaCzoInSu/A==}
     engines: {node: '>= 14'}
 
   proxy-from-env@1.1.0:
@@ -2286,12 +2303,12 @@ packages:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
 
-  puppeteer-core@22.13.1:
-    resolution: {integrity: sha512-NmhnASYp51QPRCAf9n0OPxuPMmzkKd8+2sB9Q+BjwwCG25gz6iuNc3LQDWa+cH2tyivmJppLhNNFt6Q3HmoOpw==}
+  puppeteer-core@24.1.1:
+    resolution: {integrity: sha512-7FF3gq6bpIsbq3I8mfbodXh3DCzXagoz3l2eGv1cXooYU4g0P4mcHQVHuBD4iSZPXNg8WjzlP5kmRwK9UvwF0A==}
     engines: {node: '>=18'}
 
-  puppeteer@22.13.1:
-    resolution: {integrity: sha512-PwXLDQK5u83Fm5A7TGMq+9BR7iHDJ8a3h21PSsh/E6VfhxiKYkU7+tvGZNSCap6k3pCNDd9oNteVBEctcBalmQ==}
+  puppeteer@24.1.1:
+    resolution: {integrity: sha512-fuhceZ5HZuDXVuaMIRxUuDHfCJLmK0pXh8FlzVQ0/+OApStevxZhU5kAVeYFOEqeCF5OoAyZjcWbdQK27xW/9A==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -2412,8 +2429,8 @@ packages:
   smob@1.5.0:
     resolution: {integrity: sha512-g6T+p7QO8npa+/hNx9ohv1E5pVCmWrVCUzUXJyLdMmftX6ER0oiWY/w9knEonLpnOp6b6FenKnMfR8gqwWdwig==}
 
-  socks-proxy-agent@8.0.4:
-    resolution: {integrity: sha512-GNAq/eg8Udq2x0eNiFkr9gRg5bA7PXEWagQdeRX4cPSG+X/8V38v637gim9bjFptMk1QWsCTr0ttrJEiXbNnRw==}
+  socks-proxy-agent@8.0.5:
+    resolution: {integrity: sha512-HehCEsotFqbPW9sJ8WVYB6UbmIMv7kUUORIF2Nncq4VQvBfNBLibW9YZR5dlYCSUhwcD628pRllm7n+E+YTzJw==}
     engines: {node: '>= 14'}
 
   socks@2.8.3:
@@ -2568,6 +2585,9 @@ packages:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
     engines: {node: '>= 0.8.0'}
 
+  typed-query-selector@2.12.0:
+    resolution: {integrity: sha512-SbklCd1F0EiZOyPiW192rrHZzZ5sBijB6xM+cpmrwDqObvdtunOHHIk9fCGsoK5JVIYXoyEp4iEdE3upFH3PAg==}
+
   typescript@5.5.3:
     resolution: {integrity: sha512-/hreyEujaB0w76zKo6717l3L0o/qEUtRgdvUBvlkhoWeOVMjMuHNHk0BRBzikzuGDqNmPQbg5ifMEqsHLiIUcQ==}
     engines: {node: '>=14.17'}
@@ -2607,9 +2627,6 @@ packages:
 
   uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
-
-  urlpattern-polyfill@10.0.0:
-    resolution: {integrity: sha512-H/A06tKD7sS1O1X2SshBVeA5FLycRpjqiBeqGKmBwBDBy28EnRjORxTNe269KSSr5un5qyWi1iL61wLxpd+ZOg==}
 
   vite-node@2.0.3:
     resolution: {integrity: sha512-14jzwMx7XTcMB+9BhGQyoEAmSl0eOr3nrnn+Z12WNERtOvLN+d2scbRUvyni05rT3997Bg+rZb47NyP4IQPKXg==}
@@ -2773,8 +2790,8 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  zod@3.23.8:
-    resolution: {integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==}
+  zod@3.24.1:
+    resolution: {integrity: sha512-muH7gBL9sI1nciMZV67X5fTKKBLtwpZ5VBp1vsOQzj1MhrBZ4wlVCm3gedKZWLp0Oyel8sIGfeiz54Su+OVT+A==}
 
 snapshots:
 
@@ -3837,12 +3854,12 @@ snapshots:
 
   '@polka/url@1.0.0-next.25': {}
 
-  '@puppeteer/browsers@2.2.4':
+  '@puppeteer/browsers@2.7.0':
     dependencies:
-      debug: 4.3.5
+      debug: 4.4.0
       extract-zip: 2.0.1
       progress: 2.0.3
-      proxy-agent: 6.4.0
+      proxy-agent: 6.5.0
       semver: 7.6.3
       tar-fs: 3.0.6
       unbzip2-stream: 1.4.3
@@ -4251,6 +4268,8 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  agent-base@7.1.3: {}
+
   agentkeepalive@4.5.0:
     dependencies:
       humanize-ms: 1.2.1
@@ -4419,12 +4438,11 @@ snapshots:
 
   check-error@2.1.1: {}
 
-  chromium-bidi@0.6.1(devtools-protocol@0.0.1299070):
+  chromium-bidi@1.1.0(devtools-protocol@0.0.1380148):
     dependencies:
-      devtools-protocol: 0.0.1299070
+      devtools-protocol: 0.0.1380148
       mitt: 3.0.1
-      urlpattern-polyfill: 10.0.0
-      zod: 3.23.8
+      zod: 3.24.1
 
   cli-cursor@4.0.0:
     dependencies:
@@ -4493,6 +4511,10 @@ snapshots:
     dependencies:
       ms: 2.1.2
 
+  debug@4.4.0:
+    dependencies:
+      ms: 2.1.3
+
   deep-eql@5.0.2: {}
 
   deep-is@0.1.4: {}
@@ -4505,7 +4527,7 @@ snapshots:
 
   delayed-stream@1.0.0: {}
 
-  devtools-protocol@0.0.1299070: {}
+  devtools-protocol@0.0.1380148: {}
 
   eastasianwidth@0.2.0: {}
 
@@ -4659,7 +4681,7 @@ snapshots:
 
   extract-zip@2.0.1:
     dependencies:
-      debug: 4.3.5
+      debug: 4.4.0
       get-stream: 5.2.0
       yauzl: 2.10.0
     optionalDependencies:
@@ -4781,7 +4803,7 @@ snapshots:
     dependencies:
       basic-ftp: 5.0.5
       data-uri-to-buffer: 6.0.2
-      debug: 4.3.5
+      debug: 4.4.0
       fs-extra: 11.2.0
     transitivePeerDependencies:
       - supports-color
@@ -4825,8 +4847,8 @@ snapshots:
 
   http-proxy-agent@7.0.2:
     dependencies:
-      agent-base: 7.1.1
-      debug: 4.3.5
+      agent-base: 7.1.3
+      debug: 4.4.0
     transitivePeerDependencies:
       - supports-color
 
@@ -4834,6 +4856,13 @@ snapshots:
     dependencies:
       agent-base: 7.1.1
       debug: 4.3.5
+    transitivePeerDependencies:
+      - supports-color
+
+  https-proxy-agent@7.0.6:
+    dependencies:
+      agent-base: 7.1.3
+      debug: 4.4.0
     transitivePeerDependencies:
       - supports-color
 
@@ -5127,16 +5156,16 @@ snapshots:
 
   p-try@2.2.0: {}
 
-  pac-proxy-agent@7.0.2:
+  pac-proxy-agent@7.1.0:
     dependencies:
       '@tootallnate/quickjs-emscripten': 0.23.0
-      agent-base: 7.1.1
-      debug: 4.3.5
+      agent-base: 7.1.3
+      debug: 4.4.0
       get-uri: 6.0.3
       http-proxy-agent: 7.0.2
-      https-proxy-agent: 7.0.5
+      https-proxy-agent: 7.0.6
       pac-resolver: 7.0.1
-      socks-proxy-agent: 8.0.4
+      socks-proxy-agent: 8.0.5
     transitivePeerDependencies:
       - supports-color
 
@@ -5201,16 +5230,16 @@ snapshots:
 
   progress@2.0.3: {}
 
-  proxy-agent@6.4.0:
+  proxy-agent@6.5.0:
     dependencies:
-      agent-base: 7.1.1
-      debug: 4.3.5
+      agent-base: 7.1.3
+      debug: 4.4.0
       http-proxy-agent: 7.0.2
-      https-proxy-agent: 7.0.5
+      https-proxy-agent: 7.0.6
       lru-cache: 7.18.3
-      pac-proxy-agent: 7.0.2
+      pac-proxy-agent: 7.1.0
       proxy-from-env: 1.1.0
-      socks-proxy-agent: 8.0.4
+      socks-proxy-agent: 8.0.5
     transitivePeerDependencies:
       - supports-color
 
@@ -5223,24 +5252,27 @@ snapshots:
 
   punycode@2.3.1: {}
 
-  puppeteer-core@22.13.1:
+  puppeteer-core@24.1.1:
     dependencies:
-      '@puppeteer/browsers': 2.2.4
-      chromium-bidi: 0.6.1(devtools-protocol@0.0.1299070)
-      debug: 4.3.5
-      devtools-protocol: 0.0.1299070
+      '@puppeteer/browsers': 2.7.0
+      chromium-bidi: 1.1.0(devtools-protocol@0.0.1380148)
+      debug: 4.4.0
+      devtools-protocol: 0.0.1380148
+      typed-query-selector: 2.12.0
       ws: 8.18.0
     transitivePeerDependencies:
       - bufferutil
       - supports-color
       - utf-8-validate
 
-  puppeteer@22.13.1(typescript@5.5.3):
+  puppeteer@24.1.1(typescript@5.5.3):
     dependencies:
-      '@puppeteer/browsers': 2.2.4
+      '@puppeteer/browsers': 2.7.0
+      chromium-bidi: 1.1.0(devtools-protocol@0.0.1380148)
       cosmiconfig: 9.0.0(typescript@5.5.3)
-      devtools-protocol: 0.0.1299070
-      puppeteer-core: 22.13.1
+      devtools-protocol: 0.0.1380148
+      puppeteer-core: 24.1.1
+      typed-query-selector: 2.12.0
     transitivePeerDependencies:
       - bufferutil
       - supports-color
@@ -5374,10 +5406,10 @@ snapshots:
 
   smob@1.5.0: {}
 
-  socks-proxy-agent@8.0.4:
+  socks-proxy-agent@8.0.5:
     dependencies:
-      agent-base: 7.1.1
-      debug: 4.3.5
+      agent-base: 7.1.3
+      debug: 4.4.0
       socks: 2.8.3
     transitivePeerDependencies:
       - supports-color
@@ -5527,6 +5559,8 @@ snapshots:
     dependencies:
       prelude-ls: 1.2.1
 
+  typed-query-selector@2.12.0: {}
+
   typescript@5.5.3: {}
 
   unbzip2-stream@1.4.3:
@@ -5558,8 +5592,6 @@ snapshots:
   uri-js@4.4.1:
     dependencies:
       punycode: 2.3.1
-
-  urlpattern-polyfill@10.0.0: {}
 
   vite-node@2.0.3(@types/node@20.14.11)(terser@5.31.3):
     dependencies:
@@ -5743,4 +5775,4 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zod@3.23.8: {}
+  zod@3.24.1: {}
