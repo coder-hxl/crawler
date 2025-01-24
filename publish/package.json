@@ -43,6 +43,6 @@
     "https-proxy-agent": "^7.0.5",
     "openai": "^4.52.7",
     "ora": "^8.0.1",
-    "puppeteer": "22.13.1"
+    "puppeteer": "24.1.1"
   }
 }
