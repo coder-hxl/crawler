@@ -20,34 +20,34 @@
     "prettier": "prettier --write ."
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=18.20.6"
   },
   "dependencies": {
-    "chalk": "5.3.0",
-    "https-proxy-agent": "^7.0.5",
-    "openai": "^4.52.7",
-    "ora": "^8.0.1",
-    "puppeteer": "22.13.1",
-    "vitepress": "v1.3.1",
+    "chalk": "5.4.1",
+    "https-proxy-agent": "^7.0.6",
+    "openai": "^4.80.1",
+    "ora": "^8.1.1",
+    "puppeteer": "22.15.0",
+    "vitepress": "1.6.3",
     "x-crawl": "link:"
   },
   "devDependencies": {
-    "@babel/core": "^7.24.9",
-    "@babel/preset-env": "^7.24.8",
+    "@babel/core": "^7.26.7",
+    "@babel/preset-env": "^7.26.7",
     "@rollup/plugin-babel": "^6.0.4",
-    "@rollup/plugin-run": "^3.0.2",
+    "@rollup/plugin-run": "^3.1.0",
     "@rollup/plugin-terser": "^0.4.4",
-    "@types/node": "^20.14.11",
-    "@typescript-eslint/eslint-plugin": "^8.12.2",
-    "@typescript-eslint/parser": "^8.12.2",
-    "@vitest/coverage-v8": "^2.0.3",
-    "@vitest/ui": "^2.0.3",
-    "eslint": "^9.7.0",
-    "prettier": "^3.3.3",
+    "@types/node": "^20.17.16",
+    "@typescript-eslint/eslint-plugin": "^8.22.0",
+    "@typescript-eslint/parser": "^8.22.0",
+    "@vitest/coverage-v8": "^2.1.8",
+    "@vitest/ui": "^2.1.8",
+    "eslint": "^9.19.0",
+    "prettier": "^3.4.2",
     "rollup": "^4.19.0",
     "rollup-plugin-typescript2": "^0.36.0",
-    "typescript": "5.5.3",
-    "vitest": "^2.0.3"
+    "typescript": "5.7.3",
+    "vitest": "^2.1.8"
   },
   "keywords": [
     "x-crawl",
