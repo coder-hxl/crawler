@@ -20,7 +20,7 @@
     "prettier": "prettier --write ."
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=22.13.1"
   },
   "dependencies": {
     "chalk": "5.3.0",
@@ -37,7 +37,7 @@
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-run": "^3.0.2",
     "@rollup/plugin-terser": "^0.4.4",
-    "@types/node": "^20.14.11",
+    "@types/node": "^22.12.0",
     "@typescript-eslint/eslint-plugin": "^8.12.2",
     "@typescript-eslint/parser": "^8.12.2",
     "@vitest/coverage-v8": "^2.0.3",
